@@ -1,0 +1,9 @@
+palindrome(X):-
+reverse(X,X).
+concate([],L,L).
+concate([X|L1],L2,[X|L3]):-
+cibcate(L1,L2,L3).
+reverse([],[]).
+reverse([H|T],X):-
+reverse(T,Y),
+concate(Y,[H],X).
